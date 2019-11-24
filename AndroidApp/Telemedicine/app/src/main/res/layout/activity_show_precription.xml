@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainConstraint"
+    android:layout_height="match_parent"
+    tools:context=".ShowPrecription">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimary"
+            android:text="Prescription" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:id="@+id/diseaseCard"
+                >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:id="@+id/textViewanother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Diseases" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/diseasesField1"
+                    android:textAlignment="center"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/textViewanother"
+                    android:hint="Disease 1"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/diseaseField2"
+                    android:layout_below="@id/diseasesField1"
+                    android:hint="Disease 2"
+                    />
+
+
+            </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/diseaseCard"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:id="@+id/symptomsCard"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:id="@+id/textViewAnotherAnother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Symptoms" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/symptomsField"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/textViewAnotherAnother"
+                    android:hint="All symptoms"
+                    />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_below="@+id/symptomsCard"
+            android:id="@+id/MedicationsCard"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                >
+                <TextView
+                    android:id="@+id/textViewAnotherAnotherAnother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Medicines" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/medicinesField"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/textViewAnotherAnotherAnother"
+                    android:hint="All medicines"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@+id/MedicationsCard"
+            android:id="@+id/commentsCard"
+            android:layout_margin="10dp"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content"
+                >
+                <TextView
+                    android:id="@+id/textViewAnotherAnotherAnotherAnother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Doctor Notes:" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:id="@+id/commentsField"
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/textViewAnotherAnotherAnotherAnother"
+                    android:hint="Comments by doctor"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+    </ScrollView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/mainConstraint"
+        android:text="Verified by Dr. GH"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

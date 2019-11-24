@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Telemedicine</string>
+    <string name="nav_meetings">Meetings</string>
+    <string name="nav_records">Records</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Meetings_Frag">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:orientation="horizontal"
+      android:id="@+id/linear_otp_meeting"
+      android:layout_height="wrap_content">
+     <TextView
+         android:id="@+id/meeting_id_text"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+         android:layout_marginTop="15dp"
+       android:textColor="@color/colorPrimary"
+       android:textSize="20dp"
+       android:text="Enter Meeting ID:"
+       />
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="120dp"
+          android:layout_marginLeft="5dp"
+          android:layout_height="wrap_content">
+          <com.google.android.material.textfield.TextInputEditText
+              android:layout_width="match_parent"
+              android:hint="OTP Recieved"
+              android:id="@+id/otp_enter"
+              android:layout_height="wrap_content"/>
+
+      </com.google.android.material.textfield.TextInputLayout>
+
+<Button
+    android:layout_width="wrap_content"
+    android:textColor="@color/colorWhite"
+    android:backgroundTint="@color/colorPrimary"
+    android:layout_marginTop="12dp"
+    android:id="@+id/otp_button"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="23dp"
+    android:text="Enter"
+    />
+
+
+
+
+  </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:id="@+id/linear_otp_key"
+       android:layout_below="@id/linear_otp_meeting"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/meeting_key_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:text="Enter Meeting key:"
+            />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="120dp"
+            android:layout_marginLeft="5dp"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:hint="Meeting Key"
+                android:id="@+id/meeting_key_enter"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginTop="12dp"
+            android:id="@+id/meeting_key_button"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Enter"
+            />
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scheduled_meetings"
+        android:layout_below="@+id/linear_otp_key"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Scheduled Meetings"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+              <TableLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+
+                  <TableRow
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+                  >
+                  <TextView
+                      android:layout_height="wrap_content"
+                      android:text="Meeting Key:"
+                      android:textSize="20dp"
+                      android:layout_width="wrap_content">
+
+                  </TextView>
+                  <TextView
+                      android:layout_height="wrap_content"
+                      android:text="2456"
+                      android:textSize="20dp"
+                      android:layout_marginLeft="50dp"
+                      android:layout_width="wrap_content">
+
+                  </TextView>
+              </TableRow>
+                  <TableRow
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+                      >
+                      <TextView
+                          android:layout_height="wrap_content"
+                          android:text="Time Scheduled:"
+                          android:textSize="20dp"
+                          android:layout_width="wrap_content">
+
+                      </TextView>
+                      <TextView
+                          android:layout_height="wrap_content"
+                          android:text="23 Nov 2019,8:PM"
+                          android:textSize="20dp"
+                          android:layout_marginLeft="50dp"
+                          android:layout_width="wrap_content">
+
+                      </TextView>
+                  </TableRow>
+                  <TableRow
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+                      android:layout_marginBottom="10dp"
+                      >
+                      <TextView
+                          android:layout_height="wrap_content"
+                          android:text="Doctor"
+                          android:textSize="20dp"
+                          android:layout_width="wrap_content">
+
+                      </TextView>
+                      <TextView
+                          android:layout_height="wrap_content"
+                          android:text="Dr. Gaurav Harit"
+                          android:textSize="20dp"
+                          android:layout_marginLeft="50dp"
+                          android:layout_width="wrap_content">
+
+                      </TextView>
+                  </TableRow>
+
+
+              </TableLayout>
+
+
+          </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/requested_meetings"
+        android:layout_below="@+id/scheduled_meetings"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:text="Requested Appointments"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Request ID:"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="2456"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_width="wrap_content">
+
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Status:"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content">
+                        </TextView>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Waiting for response"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_width="wrap_content">
+                        </TextView>
+                    </TableRow>
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        >
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Doctor:"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content">
+
+                        </TextView>
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:text="Not Assigned Yet"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_width="wrap_content">
+
+                        </TextView>
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+</FrameLayout>

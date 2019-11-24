@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Records_FRag">
+
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:id="@+id/record_1"
+
+             >
+
+             <androidx.cardview.widget.CardView
+                 android:layout_width="match_parent"
+                 android:layout_marginTop="20dp"
+                 android:padding="20dp"
+                 android:layout_height="wrap_content">
+                 <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="5dp"
+                     android:orientation="vertical">
+
+                     <TextView
+                         android:layout_width="match_parent"
+                         android:text="Enter Meeting ID:"
+                         android:layout_marginTop="10dp"
+                         android:textColor="@color/colorPrimary"
+                         android:textSize="20dp"
+                         android:layout_height="wrap_content">
+
+                     </TextView>
+
+                     <TableLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginBottom="10dp"
+                             >
+                             <TextView
+                                 android:layout_height="wrap_content"
+                                 android:text="Download After 5 minutes of meeting:"
+                                 android:width="100dp"
+                                 android:textSize="15dp"
+                                 android:layout_width="wrap_content">
+                             </TextView>
+<!--                             <TextView-->
+<!--                                 android:layout_height="wrap_content"-->
+<!--                                 android:text="23/Nov/2019,8:PM"-->
+<!--                                 android:textSize="20dp"-->
+<!--                                 android:layout_marginLeft="50dp"-->
+<!--                                 android:layout_width="wrap_content">-->
+
+<!--                             </TextView>-->
+                             <EditText
+                                 android:layout_height="wrap_content"
+                                    android:layout_width="wrap_content"
+                                 android:hint="XXXX"
+                                 android:textSize="20dp"
+                                 android:layout_marginLeft="10dp"
+                                 android:textAlignment="center"
+                                 android:id="@+id/getPrescription"
+                                 />
+
+                         </TableRow>
+
+                         <TableRow
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginTop="10dp"
+                             android:layout_marginBottom="10dp"
+
+                             >
+
+                             <Button
+                                android:background="@color/colorPrimary"
+                                 android:textColor="@color/colorWhite"
+                                 android:text="Get Prescription"
+                                 android:layout_height="wrap_content"
+                                 android:id="@+id/getButton"
+                                 />
+                         </TableRow>
+
+
+                     </TableLayout>
+
+
+                 </LinearLayout>
+
+
+             </androidx.cardview.widget.CardView>
+         </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+android:layout_below="@+id/record_1"
+                 android:id="@+id/record_2"
+
+                 >
+
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="20dp"
+                     android:padding="20dp"
+                     android:layout_height="wrap_content">
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:text="Meeting ID: 2456"
+                             android:layout_marginTop="10dp"
+                             android:textColor="@color/colorPrimary"
+                             android:textSize="20dp"
+                             android:layout_height="wrap_content">
+
+                         </TextView>
+
+                         <TableLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Date:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="23/Nov/2019,8:PM"
+                                     android:textSize="20dp"
+                                     android:layout_marginLeft="50dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                             </TableRow>
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Doctor:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+                                 </TextView>
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Dr. Gaurav Harit"
+                                     android:textSize="20dp"
+                                     android:layout_marginLeft="50dp"
+                                     android:layout_width="wrap_content">
+                                 </TextView>
+                             </TableRow>
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Issue:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Skin infection"
+                                     android:textSize="20dp"
+                                     android:layout_marginLeft="50dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                             </TableRow>
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Prescription Given:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                                 <ImageButton
+                                     android:id="@+id/download_image_button_3"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@color/colorWhite"
+                                     android:src="@drawable/download" />
+                             </TableRow>
+
+
+                         </TableLayout>
+
+
+                     </LinearLayout>
+
+
+                 </androidx.cardview.widget.CardView>
+             </LinearLayout>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:id="@+id/record_3"
+android:layout_below="@+id/record_2"
+                 >
+
+                 <androidx.cardview.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_marginTop="20dp"
+                     android:padding="20dp"
+                     android:layout_height="wrap_content">
+                     <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginLeft="5dp"
+                         android:orientation="vertical">
+
+                         <TextView
+                             android:layout_width="match_parent"
+                             android:text="Meeting ID: 2456"
+                             android:layout_marginTop="10dp"
+                             android:textColor="@color/colorPrimary"
+                             android:textSize="20dp"
+                             android:layout_height="wrap_content">
+
+                         </TextView>
+
+                         <TableLayout
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content">
+
+
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Date:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="23/Nov/2019,8:PM"
+                                     android:textSize="20dp"
+                                     android:layout_marginLeft="50dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                             </TableRow>
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Doctor:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+                                 </TextView>
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Dr. Gaurav Harit"
+                                     android:textSize="20dp"
+                                     android:layout_marginLeft="50dp"
+                                     android:layout_width="wrap_content">
+                                 </TextView>
+                             </TableRow>
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Issue:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Skin infection"
+                                     android:textSize="20dp"
+                                     android:layout_marginLeft="50dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                             </TableRow>
+                             <TableRow
+                                 android:layout_width="match_parent"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginTop="10dp"
+                                 android:layout_marginBottom="10dp"
+                                 >
+                                 <TextView
+                                     android:layout_height="wrap_content"
+                                     android:text="Prescription Given:"
+                                     android:textSize="20dp"
+                                     android:layout_width="wrap_content">
+
+                                 </TextView>
+                                 <ImageButton
+                                     android:id="@+id/download_image_button_1"
+                                     android:layout_width="wrap_content"
+                                     android:layout_height="wrap_content"
+                                     android:background="@color/colorWhite"
+                                     android:src="@drawable/download" />
+                             </TableRow>
+
+
+                         </TableLayout>
+
+
+                     </LinearLayout>
+
+
+                 </androidx.cardview.widget.CardView>
+             </LinearLayout>
+         </RelativeLayout>
+     </ScrollView>
+
+
+
+
+</FrameLayout>
