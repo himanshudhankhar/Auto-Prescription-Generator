@@ -1,0 +1,12 @@
+,0,1
+0,book my meeting with name in room x on day from time1 to time2,1
+1,request for schedule a meeting with mrX,2
+2,check the status of mrx from t1 to t2,3
+3,schedule my meeting with mrX in room x on day from t1 to t2,4
+4,is mrx free from t1 to t2,5
+5,is room no.x available for t1 to t2,6
+6,cancel my appointment with mrx,7
+7,book my slot frm t1 to t2 for some reason,8
+8,check my slot from t1 to t2,9
+9,check the status of this room from t1 tot t2,10
+10,cancel the scheduled meeting from t1 to t2,11
